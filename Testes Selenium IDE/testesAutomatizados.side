@@ -1,0 +1,351 @@
+{
+  "id": "d95c802a-5c36-41a0-ab30-6441faf7f446",
+  "version": "2.0",
+  "name": "testesAutomatizados",
+  "url": "http://localhost:8080/home",
+  "tests": [{
+    "id": "adcfe207-bce9-42e3-81b8-503cb94f33ae",
+    "name": "Teste Cadastro Veterinario",
+    "commands": [{
+      "id": "f649aa83-ff57-4458-b00a-9bff7741c79c",
+      "comment": "",
+      "command": "open",
+      "target": "/home",
+      "targets": [],
+      "value": ""
+    }, {
+      "id": "fa043b09-3795-4ff4-944a-b536c88dd4a0",
+      "comment": "",
+      "command": "setWindowSize",
+      "target": "972x821",
+      "targets": [],
+      "value": ""
+    }, {
+      "id": "834cc1e3-45b1-4cd5-8008-7ad78cb4eb69",
+      "comment": "",
+      "command": "click",
+      "target": "css=a:nth-child(3) > .btn",
+      "targets": [
+        ["css=a:nth-child(3) > .btn", "css:finder"],
+        ["xpath=//button", "xpath:position"],
+        ["xpath=//button[contains(.,'Adicionar')]", "xpath:innerText"]
+      ],
+      "value": ""
+    }, {
+      "id": "c1240e1b-4486-4cd3-862c-4e46f4cd3837",
+      "comment": "",
+      "command": "click",
+      "target": "id=nome",
+      "targets": [
+        ["id=nome", "id"],
+        ["name=nome", "name"],
+        ["css=#nome", "css:finder"],
+        ["xpath=//input[@id='nome']", "xpath:attributes"],
+        ["xpath=//input", "xpath:position"]
+      ],
+      "value": ""
+    }, {
+      "id": "e0b493a2-d0fe-4089-90c1-686773ede854",
+      "comment": "",
+      "command": "type",
+      "target": "id=nome",
+      "targets": [
+        ["id=nome", "id"],
+        ["name=nome", "name"],
+        ["css=#nome", "css:finder"],
+        ["xpath=//input[@id='nome']", "xpath:attributes"],
+        ["xpath=//input", "xpath:position"]
+      ],
+      "value": "João"
+    }, {
+      "id": "790147e7-3906-4aed-b111-b9ff8f55ab83",
+      "comment": "",
+      "command": "click",
+      "target": "id=inputEmail",
+      "targets": [
+        ["id=inputEmail", "id"],
+        ["name=email", "name"],
+        ["css=#inputEmail", "css:finder"],
+        ["xpath=//input[@id='inputEmail']", "xpath:attributes"],
+        ["xpath=//div[2]/input", "xpath:position"]
+      ],
+      "value": ""
+    }, {
+      "id": "b63b3a58-0dfb-4c22-900a-3c06471518d3",
+      "comment": "",
+      "command": "type",
+      "target": "id=inputEmail",
+      "targets": [
+        ["id=inputEmail", "id"],
+        ["name=email", "name"],
+        ["css=#inputEmail", "css:finder"],
+        ["xpath=//input[@id='inputEmail']", "xpath:attributes"],
+        ["xpath=//div[2]/input", "xpath:position"]
+      ],
+      "value": "joao@gmail.com"
+    }, {
+      "id": "1924bc20-48be-4126-bc75-8b7139fd6961",
+      "comment": "",
+      "command": "click",
+      "target": "id=inputEspecialidade",
+      "targets": [
+        ["id=inputEspecialidade", "id"],
+        ["name=especialidade", "name"],
+        ["css=#inputEspecialidade", "css:finder"],
+        ["xpath=//input[@id='inputEspecialidade']", "xpath:attributes"],
+        ["xpath=//div[3]/input", "xpath:position"]
+      ],
+      "value": ""
+    }, {
+      "id": "1af03501-f523-4b8f-9180-69d794b4e7e5",
+      "comment": "",
+      "command": "type",
+      "target": "id=inputEspecialidade",
+      "targets": [
+        ["id=inputEspecialidade", "id"],
+        ["name=especialidade", "name"],
+        ["css=#inputEspecialidade", "css:finder"],
+        ["xpath=//input[@id='inputEspecialidade']", "xpath:attributes"],
+        ["xpath=//div[3]/input", "xpath:position"]
+      ],
+      "value": "Cirurgia"
+    }, {
+      "id": "1dca2a1f-7068-4c5a-accf-1e033b5e0dd4",
+      "comment": "",
+      "command": "click",
+      "target": "id=inputSalario",
+      "targets": [
+        ["id=inputSalario", "id"],
+        ["name=salario", "name"],
+        ["css=#inputSalario", "css:finder"],
+        ["xpath=//input[@id='inputSalario']", "xpath:attributes"],
+        ["xpath=//div[4]/input", "xpath:position"]
+      ],
+      "value": ""
+    }, {
+      "id": "ddea4ce1-f8be-4f88-820a-109fe772d43d",
+      "comment": "",
+      "command": "type",
+      "target": "id=inputSalario",
+      "targets": [
+        ["id=inputSalario", "id"],
+        ["name=salario", "name"],
+        ["css=#inputSalario", "css:finder"],
+        ["xpath=//input[@id='inputSalario']", "xpath:attributes"],
+        ["xpath=//div[4]/input", "xpath:position"]
+      ],
+      "value": "10000.00"
+    }, {
+      "id": "20d013a9-66dd-46e1-b7b1-3e42523f710e",
+      "comment": "",
+      "command": "click",
+      "target": "css=.btn",
+      "targets": [
+        ["css=.btn", "css:finder"],
+        ["xpath=//button[@type='submit']", "xpath:attributes"],
+        ["xpath=//button", "xpath:position"],
+        ["xpath=//button[contains(.,'Cadastrar')]", "xpath:innerText"]
+      ],
+      "value": ""
+    }, {
+      "id": "c35d5128-d8a4-4209-81c9-7d718151a5c0",
+      "comment": "",
+      "command": "assertText",
+      "target": "css=tr:nth-child(4) > td:nth-child(2)",
+      "targets": [
+        ["css=tr:nth-child(4) > td:nth-child(2)", "css:finder"],
+        ["xpath=//tr[4]/td", "xpath:position"],
+        ["xpath=//td[contains(.,'João')]", "xpath:innerText"]
+      ],
+      "value": "João"
+    }]
+  }, {
+    "id": "3e3e0f39-e7b5-4f4a-91d1-8a3b413895a5",
+    "name": "Teste Consulta Veterinario",
+    "commands": [{
+      "id": "07df2c73-da71-4827-8486-3d0d499a40bc",
+      "comment": "",
+      "command": "open",
+      "target": "http://localhost:8080/home",
+      "targets": [],
+      "value": ""
+    }, {
+      "id": "939f85e2-2874-41a7-85bb-3b4e70f96a44",
+      "comment": "",
+      "command": "setWindowSize",
+      "target": "972x821",
+      "targets": [],
+      "value": ""
+    }, {
+      "id": "e2eb51f3-9c03-45d8-afa4-c6f68f8e80f2",
+      "comment": "",
+      "command": "click",
+      "target": "css=a:nth-child(4) > .btn",
+      "targets": [
+        ["css=a:nth-child(4) > .btn", "css:finder"],
+        ["xpath=//a[2]/button", "xpath:position"],
+        ["xpath=//button[contains(.,'Consultar')]", "xpath:innerText"]
+      ],
+      "value": ""
+    }, {
+      "id": "c8aa4a30-a6a2-401f-87ef-f3d183a7a3b2",
+      "comment": "",
+      "command": "click",
+      "target": "id=nome",
+      "targets": [
+        ["id=nome", "id"],
+        ["name=nome", "name"],
+        ["css=#nome", "css:finder"],
+        ["xpath=//input[@id='nome']", "xpath:attributes"],
+        ["xpath=//input", "xpath:position"]
+      ],
+      "value": ""
+    }, {
+      "id": "8a8c9c04-47c5-4d42-9c68-9839b7bed0b8",
+      "comment": "",
+      "command": "type",
+      "target": "id=nome",
+      "targets": [
+        ["id=nome", "id"],
+        ["name=nome", "name"],
+        ["css=#nome", "css:finder"],
+        ["xpath=//input[@id='nome']", "xpath:attributes"],
+        ["xpath=//input", "xpath:position"]
+      ],
+      "value": "João"
+    }, {
+      "id": "9e90befc-30ac-47cb-848a-c9c9d87b8c02",
+      "comment": "",
+      "command": "click",
+      "target": "css=.btn",
+      "targets": [
+        ["css=.btn", "css:finder"],
+        ["xpath=//button[@type='submit']", "xpath:attributes"],
+        ["xpath=//button", "xpath:position"],
+        ["xpath=//button[contains(.,'Consultar')]", "xpath:innerText"]
+      ],
+      "value": ""
+    }, {
+      "id": "6d4a6dd4-39a2-4591-9f1d-a4fc11d5a7b1",
+      "comment": "",
+      "command": "assertText",
+      "target": "css=td:nth-child(2) > span",
+      "targets": [
+        ["css=td:nth-child(2) > span", "css:finder"],
+        ["xpath=//td/span", "xpath:position"],
+        ["xpath=//span[contains(.,'João')]", "xpath:innerText"]
+      ],
+      "value": "João"
+    }]
+  }, {
+    "id": "e47c4241-3891-47fc-8a55-aad324e49bb4",
+    "name": "Teste Excluir Veterinario",
+    "commands": [{
+      "id": "7a3deaae-5f25-4ced-98d0-941fe491df79",
+      "comment": "",
+      "command": "open",
+      "target": "http://localhost:8080/home",
+      "targets": [],
+      "value": ""
+    }, {
+      "id": "313909fa-d8f4-4b7b-bc76-4d5758e3ca27",
+      "comment": "",
+      "command": "setWindowSize",
+      "target": "972x821",
+      "targets": [],
+      "value": ""
+    }, {
+      "id": "e5f1a8d4-175c-4202-9380-548b247bd7fc",
+      "comment": "",
+      "command": "click",
+      "target": "css=a:nth-child(4) > .btn",
+      "targets": [
+        ["css=a:nth-child(4) > .btn", "css:finder"],
+        ["xpath=//a[2]/button", "xpath:position"],
+        ["xpath=//button[contains(.,'Consultar')]", "xpath:innerText"]
+      ],
+      "value": ""
+    }, {
+      "id": "c96372e5-a228-427c-8f5a-a56cd741afc6",
+      "comment": "",
+      "command": "click",
+      "target": "id=nome",
+      "targets": [
+        ["id=nome", "id"],
+        ["name=nome", "name"],
+        ["css=#nome", "css:finder"],
+        ["xpath=//input[@id='nome']", "xpath:attributes"],
+        ["xpath=//input", "xpath:position"]
+      ],
+      "value": ""
+    }, {
+      "id": "770481f7-1b84-47ab-84a7-0c7741947b0b",
+      "comment": "",
+      "command": "type",
+      "target": "id=nome",
+      "targets": [
+        ["id=nome", "id"],
+        ["name=nome", "name"],
+        ["css=#nome", "css:finder"],
+        ["xpath=//input[@id='nome']", "xpath:attributes"],
+        ["xpath=//input", "xpath:position"]
+      ],
+      "value": "João"
+    }, {
+      "id": "6ea7ca33-2347-4569-becc-ca3cb5532ee5",
+      "comment": "",
+      "command": "click",
+      "target": "css=.btn",
+      "targets": [
+        ["css=.btn", "css:finder"],
+        ["xpath=//button[@type='submit']", "xpath:attributes"],
+        ["xpath=//button", "xpath:position"],
+        ["xpath=//button[contains(.,'Consultar')]", "xpath:innerText"]
+      ],
+      "value": ""
+    }, {
+      "id": "3f7a9046-40d5-41e6-878c-e643333869a8",
+      "comment": "",
+      "command": "assertText",
+      "target": "css=tr:nth-child(2) > td:nth-child(2) > span",
+      "targets": [
+        ["css=tr:nth-child(2) > td:nth-child(2) > span", "css:finder"],
+        ["xpath=//td/span", "xpath:position"],
+        ["xpath=//span[contains(.,'João')]", "xpath:innerText"]
+      ],
+      "value": "João"
+    }, {
+      "id": "1b851979-877f-4d9f-9299-26178aaf2123",
+      "comment": "",
+      "command": "click",
+      "target": "css=tr:nth-child(2) .btn-danger",
+      "targets": [
+        ["css=tr:nth-child(2) .btn-danger", "css:finder"],
+        ["xpath=//a[contains(@href, 'delete/11')]", "xpath:href"],
+        ["xpath=//a[2]", "xpath:position"]
+      ],
+      "value": ""
+    }, {
+      "id": "1da934bb-f3b8-4362-8d54-528ef9b7a50b",
+      "comment": "",
+      "command": "assertNotText",
+      "target": "css=tr:nth-child(2) > td:nth-child(2) > span",
+      "targets": [
+        ["css=tr:nth-child(2) > td:nth-child(2) > span", "css:finder"],
+        ["xpath=//td/span", "xpath:position"],
+        ["xpath=//span[contains(.,'João')]", "xpath:innerText"]
+      ],
+      "value": "João"
+    }]
+  }],
+  "suites": [{
+    "id": "48f61ab3-05df-4dcf-b73d-0c6695225bbb",
+    "name": "Default Suite",
+    "persistSession": false,
+    "parallel": false,
+    "timeout": 300,
+    "tests": ["adcfe207-bce9-42e3-81b8-503cb94f33ae"]
+  }],
+  "urls": ["http://localhost:8080/", "http://localhost:8080/home"],
+  "plugins": []
+}
